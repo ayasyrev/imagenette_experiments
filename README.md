@@ -1,2 +1,5 @@
 # imagenette_experiments
-Some experiments on Imagenette/Imagewoof datasets
+> experiments with fastai imagenette / imagewoof datasets
+
+
+Results nbs. 
