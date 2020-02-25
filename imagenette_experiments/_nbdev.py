@@ -6,7 +6,6 @@ index = {"Mish": "00_train_utils.ipynb",
          "Ranger": "00_train_utils.ipynb",
          "get_data": "00_train_utils.ipynb",
          "get_learn": "00_train_utils.ipynb",
-         "NewResBlock": "01_ResnetTrick_model.ipynb",
          "Model": "01_ResnetTrick_model.ipynb"}
 
 modules = ["train_utils.py",
