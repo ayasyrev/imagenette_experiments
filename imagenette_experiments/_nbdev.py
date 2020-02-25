@@ -2,9 +2,15 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {}
+index = {"Mish": "00_train_utils.ipynb",
+         "Ranger": "00_train_utils.ipynb",
+         "get_data": "00_train_utils.ipynb",
+         "get_learn": "00_train_utils.ipynb",
+         "NewResBlock": "01_ResnetTrick_model.ipynb",
+         "Model": "01_ResnetTrick_model.ipynb"}
 
-modules = []
+modules = ["train_utils.py",
+           "trick_model.py"]
 
 doc_url = "https://ayasyrev.github.io/imagenette_experiments/"
 

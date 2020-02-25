@@ -10,10 +10,34 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: imagenette_experiments
+      title: train_utils
       url: /train_utils
     - output: web,pdf
-      title: Title
+      title: trick_model
+      url: /ResnetTrick_model
+    - output: web,pdf
+      title: ResnetTrick_create_model_fit
+      url: /ResnetTrick_create_model_fit
+    - output: web,pdf
+      title: ResnetTrick_s128
+      url: /Woof_MaxBlurPool_ResnetTrick_s128
+    - output: web,pdf
+      title: ResnetTrick_s192bs32
+      url: /Woof_MaxBlurPool_ResnetTrick_s192bs32
+    - output: web,pdf
+      title: ResnetTrick_s192bs64
+      url: /Woof_MaxBlurPool_ResnetTrick_s192bs64_ 8744
+    - output: web,pdf
+      title: ResnetTrick_s256bs32
+      url: /Woof_MaxBlurPool_ResnetTrick_s256bs32
+    - output: web,pdf
+      title: Relu_vs_Selu_Celu_Mish_1
+      url: /act_fn_Relu_vs_Selu_Celu_Mish_1
+    - output: web,pdf
+      title: Relu_vs_Selu_Celu_Mish_2
+      url: /act_fn_Relu_vs_Selu_Celu_Mish_2
+    - output: web,pdf
+      title: stats_act_fn
       url: /stats_act_fn
     output: web
     title: imagenette_experiments
