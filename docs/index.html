@@ -32,8 +32,15 @@ summary: "experiments with fastai imagenette / imagewoof datasets"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This results was done with experimental model - XResnet with modification. I use pool layer plus convolution stride 1 instead of convolution stride 2.<br>
-Explanatiom about model here: <a href="https://github.com/ayasyrev/imagenette_experiments/blob/master/ResnetTrick_create_model_fit.ipynb">https://github.com/ayasyrev/imagenette_experiments/blob/master/ResnetTrick_create_model_fit.ipynb</a></p>
+<p>This results was done with experimental model - XResnet with modification.<br>
+I used pool layer plus convolution stride 1 instead of convolution stride 2.<br>
+And instead of regular pytorch pool (AveragePool2d and MaxPool2d) i used MaxBlurPool as described here:<br>
+<a href="https://forums.fast.ai/t/imagenette-imagewoof-leaderboards/45822/20?u=a_yasyrev">fastai forum topic</a><br>
+<a href="https://github.com/ducha-aiki/Ranger-Mish-ImageWoof-5/blob/master/mxresnet.py#L121">github ducha-aiki</a></p>
+<p>Activation function - Mish, long disscussion <a href="https://forums.fast.ai/t/meet-mish-new-activation-function-possible-successor-to-relu">on fastai forum</a><br>
+Fit with Ranger optimizer and flat with annealing - <a href="https://forums.fast.ai/t/how-we-beat-the-5-epoch-imagewoof-leaderboard-score-some-new-techniques-to-consider">long tread on fastai forum</a></p>
+<p>Model was created with <a href="https://github.com/ayasyrev/model_constructor">model-constructor</a><br>
+Explanation how model was created here: <a href="https://github.com/ayasyrev/imagenette_experiments/blob/master/ResnetTrick_create_model_fit.ipynb">https://github.com/ayasyrev/imagenette_experiments/blob/master/ResnetTrick_create_model_fit.ipynb</a></p>
 
 </div>
 </div>

@@ -4,8 +4,17 @@
 
 Notebooks with train results.
 
-This results was done with experimental model - XResnet with modification. I use pool layer plus convolution stride 1 instead of convolution stride 2.  
-Explanatiom about model here: https://github.com/ayasyrev/imagenette_experiments/blob/master/ResnetTrick_create_model_fit.ipynb
+This results was done with experimental model - XResnet with modification.  
+I used pool layer plus convolution stride 1 instead of convolution stride 2.  
+And instead of regular pytorch pool (AveragePool2d and MaxPool2d) i used MaxBlurPool as described here:   
+[fastai forum topic](https://forums.fast.ai/t/imagenette-imagewoof-leaderboards/45822/20?u=a_yasyrev)  
+[github ducha-aiki](https://github.com/ducha-aiki/Ranger-Mish-ImageWoof-5/blob/master/mxresnet.py#L121)  
+
+Activation function - Mish, long disscussion [on fastai forum](https://forums.fast.ai/t/meet-mish-new-activation-function-possible-successor-to-relu)  
+Fit with Ranger optimizer and flat with annealing - [long tread on fastai forum](https://forums.fast.ai/t/how-we-beat-the-5-epoch-imagewoof-leaderboard-score-some-new-techniques-to-consider)  
+
+Model was created with [model-constructor](https://github.com/ayasyrev/model_constructor)  
+Explanation how model was created here: https://github.com/ayasyrev/imagenette_experiments/blob/master/ResnetTrick_create_model_fit.ipynb
 
 Current results vs results on leaderboard - ImageWOOF:
 
@@ -35,20 +44,20 @@ Install this repo:
 ` pip install -e git+https://github.com/ayasyrev/imagenette_experiments`  
 Now import Model constructor and helper utils as:
 
-```python
+```
 from imagenette_experiments.train_utils import *
 from imagenette_experiments.trick_model import *
 ```
 
 Now create model constructor:
 
-```python
+```
 model = Model()
 ```
 
 Now we can check model, for example:
 
-```python
+```
 model.body.l_1.bl_0
 ```
 
@@ -84,7 +93,7 @@ model.body.l_1.bl_0
 
 Lets create Learner:
 
-```python
+```
 learn = get_learn(woof=1, size=128, bs=64)
 ```
 
