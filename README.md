@@ -22,18 +22,18 @@ Current results vs results on leaderboard - ImageWOOF:
 |--|--|--|--|--|--|--| -- |
 |128|5|  |73.37%|5, mean| |
 |128|20||85.52%|5, mean|86.10% | |
-|128|80||87.20%|1| 87.60% | | --
-|128|200||87.20%|1| | |- training
+|128|80||87.20%|1| 87.63% | | 3 runs, start_pct=0.3
+|128|200||87.20%|1|  88.30%| | 3 runs, start_pct=0.2
 ||||||| 
-|192|5||75.94%|5, mean| 77.87% | [link](https://github.com/ayasyrev/imagenette_experiments/blob/master/Woof_MaxBlurPool_ResnetTrick_s192bs32.ipynb) | added to board
-|192|20||87.25%|5, mean| 87.85% | [link](https://github.com/ayasyrev/imagenette_experiments/blob/master/Woof_MaxBlurPool_ResnetTrick_s192bs32.ipynb)  | added to board
-|192|80||89.21%|1| 89.69% | | --
-|192|200||89.54%|1| 90.35% | | --
+|192|5||75.94%|5, mean| 77.87% | [notebook](https://github.com/ayasyrev/imagenette_experiments/blob/master/Woof_MaxBlurPool_ResnetTrick_s192bs32.ipynb) | added to board
+|192|20||87.25%|5, mean| 87.85% | [notebook](https://github.com/ayasyrev/imagenette_experiments/blob/master/Woof_MaxBlurPool_ResnetTrick_s192bs32.ipynb)  | added to board
+|192|80||89.21%|1| 89.69% | | 4 runs.
+|192|200||89.54%|1| 90.35% | | 2 runs.
 |||||||
-|256|5||76.87%|5, mean| 78,84% | [link](https://github.com/ayasyrev/imagenette_experiments/blob/master/Woof_MaxBlurPool_ResnetTrick_s256bs32.ipynb)| added to board
-|256|20||88.29%|5, mean| 88,58% | [link](https://github.com/ayasyrev/imagenette_experiments/blob/master/Woof_MaxBlurPool_ResnetTrick_s256bs32.ipynb)| added to board
-|256|80||90.48%|1| 90.65% | | --
-|256|200||90.38%|1| 91.14% | | --
+|256|5||76.87%|5, mean| 78,84% | [notebook](https://github.com/ayasyrev/imagenette_experiments/blob/master/Woof_MaxBlurPool_ResnetTrick_s256bs32.ipynb)| added to board
+|256|20||88.29%|5, mean| 88,58% | [notebook](https://github.com/ayasyrev/imagenette_experiments/blob/master/Woof_MaxBlurPool_ResnetTrick_s256bs32.ipynb)| added to board
+|256|80||90.48%|1| 90.63% | | 2 runs, start_pct=0.4
+|256|200||90.38%|1| 91.14% | | 3 runs, start_pct=0.2
 
 
 

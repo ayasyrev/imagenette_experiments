@@ -22,11 +22,29 @@ entries:
       title: ResnetTrick_s128
       url: /Woof_MaxBlurPool_ResnetTrick_s128
     - output: web,pdf
+      title: ResnetTrick_s128_e200
+      url: /Woof_MaxBlurPool_ResnetTrick_s128_e200_8830
+    - output: web,pdf
+      title: ResnetTrick_s128_e80
+      url: /Woof_MaxBlurPool_ResnetTrick_s128_e80_8763
+    - output: web,pdf
       title: ResnetTrick_s192bs32
       url: /Woof_MaxBlurPool_ResnetTrick_s192bs32
     - output: web,pdf
+      title: ResnetTrick_s192bs32_e200
+      url: /Woof_MaxBlurPool_ResnetTrick_s192bs32_e200_9035
+    - output: web,pdf
+      title: ResnetTrick_s192bs32_e80
+      url: /Woof_MaxBlurPool_ResnetTrick_s192bs32_e80_8969
+    - output: web,pdf
       title: ResnetTrick_s192bs64
       url: /Woof_MaxBlurPool_ResnetTrick_s192bs64_ 8744
+    - output: web,pdf
+      title: ResnetTrick_s256bs16_e200
+      url: /Woof_MaxBlurPool_ResnetTrick_s256bs16_e200_9114
+    - output: web,pdf
+      title: ResnetTrick_s256bs16_e80
+      url: /Woof_MaxBlurPool_ResnetTrick_s256bs16_e80_9063
     - output: web,pdf
       title: ResnetTrick_s256bs32
       url: /Woof_MaxBlurPool_ResnetTrick_s256bs32
