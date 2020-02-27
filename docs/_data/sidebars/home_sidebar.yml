@@ -49,6 +49,9 @@ entries:
       title: ResnetTrick_s256bs32
       url: /Woof_MaxBlurPool_ResnetTrick_s256bs32
     - output: web,pdf
+      title: Twist_s128_e2_e20
+      url: /Woof_twist_s128_e5_7513_e20_8639
+    - output: web,pdf
       title: Relu_vs_Selu_Celu_Mish_1
       url: /act_fn_Relu_vs_Selu_Celu_Mish_1
     - output: web,pdf

@@ -14,6 +14,7 @@
     "ResnetTrick_s256bs16_e200": "/Woof_MaxBlurPool_ResnetTrick_s256bs16_e200_9114",
     "ResnetTrick_s256bs16_e80": "/Woof_MaxBlurPool_ResnetTrick_s256bs16_e80_9063",
     "ResnetTrick_s256bs32": "/Woof_MaxBlurPool_ResnetTrick_s256bs32",
+    "Twist_s128_e2_e20": "/Woof_twist_s128_e5_7513_e20_8639",
     "Relu_vs_Selu_Celu_Mish_1": "/act_fn_Relu_vs_Selu_Celu_Mish_1",
     "Relu_vs_Selu_Celu_Mish_2": "/act_fn_Relu_vs_Selu_Celu_Mish_2",
     "stats_act_fn": "/stats_act_fn"
