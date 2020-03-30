@@ -5,11 +5,13 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"Mish": "00_train_utils.ipynb",
          "Ranger": "00_train_utils.ipynb",
          "get_data": "00_train_utils.ipynb",
-         "get_learn": "00_train_utils.ipynb",
-         "Model": "01_ResnetTrick_model.ipynb"}
+         "get_learn": "02_train_utils_fastai2.ipynb",
+         "Model": "01_ResnetTrick_model.ipynb",
+         "get_dls": "02_train_utils_fastai2.ipynb"}
 
 modules = ["train_utils.py",
-           "trick_model.py"]
+           "trick_model.py",
+           "train_utils_fastai2.py"]
 
 doc_url = "https://ayasyrev.github.io/imagenette_experiments/"
 
