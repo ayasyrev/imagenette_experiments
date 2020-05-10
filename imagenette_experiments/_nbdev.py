@@ -7,10 +7,16 @@ index = {"Mish": "00_train_utils.ipynb",
          "get_data": "00_train_utils.ipynb",
          "get_learn": "02_train_utils_fastai2.ipynb",
          "Model": "01_ResnetTrick_model.ipynb",
+         "SEED_N": "02_consistency.ipynb",
+         "prepare_cudnn": "02_consistency.ipynb",
+         "torch.set_printoptions(precision": "02_consistency.ipynb",
+         "set_global_seed": "02_consistency.ipynb",
+         "set_consistance": "02_consistency.ipynb",
          "get_dls": "02_train_utils_fastai2.ipynb"}
 
 modules = ["train_utils.py",
            "trick_model.py",
+           "consistency.py",
            "train_utils_fastai2.py"]
 
 doc_url = "https://ayasyrev.github.io/imagenette_experiments/"
