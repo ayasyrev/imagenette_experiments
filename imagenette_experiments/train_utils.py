@@ -17,7 +17,7 @@ from torch.optim.optimizer import Optimizer, required
 import itertools as it
 
 # Cell
-from ranger import Ranger as RangerGC
+# from ranger import Ranger as RangerGC
 
 # Cell
 class Mish(nn.Module):
@@ -224,7 +224,7 @@ def get_learn(
 
     if   opt=='adam' : opt_func = partial(optim.Adam, betas=(mom,alpha), eps=eps)
     elif opt=='ranger'  : opt_func = partial(Ranger,  betas=(mom,alpha), eps=eps)
-    elif opt=='ranger_gc'  : opt_func = partial(RangerGC, use_gc=use_gc, betas=(mom,alpha), eps=eps)
+    # elif opt=='ranger_gc'  : opt_func = partial(RangerGC, use_gc=use_gc, betas=(mom,alpha), eps=eps)
 
     data = get_data(size, woof, bs)
     learn = (Learner(data, model(), wd=1e-2, opt_func=opt_func,

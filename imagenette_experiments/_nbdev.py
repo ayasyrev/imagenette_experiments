@@ -9,7 +9,6 @@ index = {"Mish": "00_train_utils.ipynb",
          "Model": "01_ResnetTrick_model.ipynb",
          "SEED_N": "02_consistency.ipynb",
          "prepare_cudnn": "02_consistency.ipynb",
-         "torch.set_printoptions(precision": "02_consistency.ipynb",
          "set_global_seed": "02_consistency.ipynb",
          "set_consistance": "02_consistency.ipynb",
          "get_dls": "02_train_utils_fastai2.ipynb"}
