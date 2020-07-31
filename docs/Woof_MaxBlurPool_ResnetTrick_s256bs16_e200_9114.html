@@ -6,7 +6,6 @@ keywords: fastai
 sidebar: home_sidebar
 
 summary: "size 256 bs 16 200 epochs runs."
-description: "size 256 bs 16 200 epochs runs."
 ---
 <!--
 
@@ -26,7 +25,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="setup-and-imports">setup and imports<a class="anchor-link" href="#setup-and-imports"> </a></h1>
+<h1 id="setup-and-imports">setup and imports<a class="anchor-link" href="#setup-and-imports">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -104,7 +103,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="utils">utils<a class="anchor-link" href="#utils"> </a></h1>
+<h1 id="utils">utils<a class="anchor-link" href="#utils">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -156,13 +155,13 @@ description: "size 256 bs 16 200 epochs runs."
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">lr</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">N_sma_threshhold</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">betas</span><span class="o">=</span><span class="p">(</span><span class="o">.</span><span class="mi">95</span><span class="p">,</span><span class="mf">0.999</span><span class="p">),</span> <span class="n">eps</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">,</span> <span class="n">weight_decay</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
         <span class="c1">#parameter checks</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="mf">0.0</span> <span class="o">&lt;=</span> <span class="n">alpha</span> <span class="o">&lt;=</span> <span class="mf">1.0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Invalid slow update rate: </span><span class="si">{alpha}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Invalid slow update rate: </span><span class="si">{</span><span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="mi">1</span> <span class="o">&lt;=</span> <span class="n">k</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Invalid lookahead steps: </span><span class="si">{k}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Invalid lookahead steps: </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">lr</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Invalid Learning Rate: </span><span class="si">{lr}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Invalid Learning Rate: </span><span class="si">{</span><span class="n">lr</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">eps</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Invalid eps: </span><span class="si">{eps}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Invalid eps: </span><span class="si">{</span><span class="n">eps</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
         <span class="c1">#parameter comments:</span>
         <span class="c1"># beta1 (momentum) of .95 seems to work better than .90...</span>
@@ -363,7 +362,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="ResBlock">ResBlock<a class="anchor-link" href="#ResBlock"> </a></h1>
+<h1 id="ResBlock">ResBlock<a class="anchor-link" href="#ResBlock">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -403,7 +402,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h1>
+<h1 id="Parameters">Parameters<a class="anchor-link" href="#Parameters">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -427,7 +426,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Model-Constructor">Model Constructor<a class="anchor-link" href="#Model-Constructor"> </a></h1>
+<h1 id="Model-Constructor">Model Constructor<a class="anchor-link" href="#Model-Constructor">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -517,7 +516,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="repr-model">repr model<a class="anchor-link" href="#repr-model"> </a></h2>
+<h2 id="repr-model">repr model<a class="anchor-link" href="#repr-model">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -1356,7 +1355,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Lr-find">Lr find<a class="anchor-link" href="#Lr-find"> </a></h1>
+<h1 id="Lr-find">Lr find<a class="anchor-link" href="#Lr-find">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -1401,7 +1400,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="epochs-200">epochs 200<a class="anchor-link" href="#epochs-200"> </a></h1>
+<h1 id="epochs-200">epochs 200<a class="anchor-link" href="#epochs-200">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -1450,7 +1449,7 @@ description: "size 256 bs 16 200 epochs runs."
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1">1<a class="anchor-link" href="#1"> </a></h2>
+<h2 id="1">1<a class="anchor-link" href="#1">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -3264,7 +3263,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">recorder</span><span class="o">.</span><span class="n">metrics</span><span class="p">):</span>
-    <span class="n">res</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{num}</span><span class="s2">, {i[0].item()}, {i[1].item()} </span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">res</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span>
 </pre></div>
 
     </div>
@@ -3288,7 +3287,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2">2<a class="anchor-link" href="#2"> </a></h2>
+<h2 id="2">2<a class="anchor-link" href="#2">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -3980,7 +3979,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">recorder</span><span class="o">.</span><span class="n">metrics</span><span class="p">):</span>
-    <span class="n">res</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{num}</span><span class="s2">, {i[0].item()}, {i[1].item()} </span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">res</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span>
 </pre></div>
 
     </div>
@@ -4009,7 +4008,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">loss</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">recorder</span><span class="o">.</span><span class="n">losses</span><span class="p">):</span>
-    <span class="n">loss</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{num}</span><span class="s2">, {i.item()} </span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">loss</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span>
 </pre></div>
 
     </div>
@@ -4038,7 +4037,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">val_loss</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">recorder</span><span class="o">.</span><span class="n">val_losses</span><span class="p">):</span>
-    <span class="n">val_loss</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{num}</span><span class="s2">, {i.item()}</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">val_loss</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
 </pre></div>
 
     </div>
@@ -4062,7 +4061,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3">3<a class="anchor-link" href="#3"> </a></h2>
+<h2 id="3">3<a class="anchor-link" href="#3">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -5050,7 +5049,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">recorder</span><span class="o">.</span><span class="n">metrics</span><span class="p">):</span>
-    <span class="n">res</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{num}</span><span class="s2">, {i[0].item()}, {i[1].item()} </span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">res</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span>
 </pre></div>
 
     </div>
@@ -5079,7 +5078,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">loss</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">recorder</span><span class="o">.</span><span class="n">losses</span><span class="p">):</span>
-    <span class="n">loss</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{num}</span><span class="s2">, {i.item()} </span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">loss</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span>
 </pre></div>
 
     </div>
@@ -5108,7 +5107,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">val_loss</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">recorder</span><span class="o">.</span><span class="n">val_losses</span><span class="p">):</span>
-    <span class="n">val_loss</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{num}</span><span class="s2">, {i.item()}</span><span class="se">\n</span><span class="s2">&quot;</span>
+    <span class="n">val_loss</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">i</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
 </pre></div>
 
     </div>
@@ -5132,7 +5131,7 @@ NotebookApp.rate_limit_window=3.0 (secs)
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="epochs-200-results">epochs 200 results<a class="anchor-link" href="#epochs-200-results"> </a></h1>
+<h1 id="epochs-200-results">epochs 200 results<a class="anchor-link" href="#epochs-200-results">&#182;</a></h1>
 </div>
 </div>
 </div>
