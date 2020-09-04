@@ -17,13 +17,9 @@ from torch.optim.optimizer import Optimizer, required
 import itertools as it
 
 # Cell
-# from ranger import Ranger as RangerGC
-
-# Cell
 class Mish(nn.Module):
     def __init__(self):
         super().__init__()
-#         print("Mish activation loaded...")
 
     def forward(self, x):
         #save 1 second per epoch with no x= x*() and then return x...just inline it.
@@ -192,7 +188,7 @@ class Ranger(Optimizer):
 # Cell
 def get_data(size=128, woof=1, bs=64, workers=None, **kwargs):
     if woof:
-        path = URLs.IMAGEWOOF    # if woof
+        path = URLs.IMAGEWOOF
     else:
         path = URLs.IMAGENETTE
     path = untar_data(path)
