@@ -11,55 +11,13 @@ entries:
       url: /
     - output: web,pdf
       title: train_utils
-      url: /train_utils
+      url: train_utils.html
     - output: web,pdf
       title: trick_model
-      url: /ResnetTrick_model
+      url: ResnetTrick_model.html
     - output: web,pdf
-      title: ResnetTrick_create_model_fit
-      url: /ResnetTrick_create_model_fit
-    - output: web,pdf
-      title: ResnetTrick_s128
-      url: /Woof_MaxBlurPool_ResnetTrick_s128
-    - output: web,pdf
-      title: ResnetTrick_s128_e200
-      url: /Woof_MaxBlurPool_ResnetTrick_s128_e200_8830
-    - output: web,pdf
-      title: ResnetTrick_s128_e80
-      url: /Woof_MaxBlurPool_ResnetTrick_s128_e80_8763
-    - output: web,pdf
-      title: ResnetTrick_s192bs32
-      url: /Woof_MaxBlurPool_ResnetTrick_s192bs32
-    - output: web,pdf
-      title: ResnetTrick_s192bs32_e200
-      url: /Woof_MaxBlurPool_ResnetTrick_s192bs32_e200_9035
-    - output: web,pdf
-      title: ResnetTrick_s192bs32_e80
-      url: /Woof_MaxBlurPool_ResnetTrick_s192bs32_e80_8969
-    - output: web,pdf
-      title: ResnetTrick_s192bs64
-      url: /Woof_MaxBlurPool_ResnetTrick_s192bs64_ 8744
-    - output: web,pdf
-      title: ResnetTrick_s256bs16_e200
-      url: /Woof_MaxBlurPool_ResnetTrick_s256bs16_e200_9114
-    - output: web,pdf
-      title: ResnetTrick_s256bs16_e80
-      url: /Woof_MaxBlurPool_ResnetTrick_s256bs16_e80_9063
-    - output: web,pdf
-      title: ResnetTrick_s256bs32
-      url: /Woof_MaxBlurPool_ResnetTrick_s256bs32
-    - output: web,pdf
-      title: Twist_s128_e2_e20
-      url: /Woof_twist_s128_e5_7513_e20_8639
-    - output: web,pdf
-      title: Relu_vs_Selu_Celu_Mish_1
-      url: /act_fn_Relu_vs_Selu_Celu_Mish_1
-    - output: web,pdf
-      title: Relu_vs_Selu_Celu_Mish_2
-      url: /act_fn_Relu_vs_Selu_Celu_Mish_2
-    - output: web,pdf
-      title: stats_act_fn
-      url: /stats_act_fn
+      title: consistency
+      url: consistency.html
     output: web
     title: imagenette_experiments
   output: web

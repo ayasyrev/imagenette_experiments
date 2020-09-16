@@ -5,18 +5,16 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"Mish": "00_train_utils.ipynb",
          "Ranger": "00_train_utils.ipynb",
          "get_data": "00_train_utils.ipynb",
-         "get_learn": "02_train_utils_fastai2.ipynb",
+         "get_learn": "00_train_utils.ipynb",
          "Model": "01_ResnetTrick_model.ipynb",
          "SEED_N": "02_consistency.ipynb",
          "prepare_cudnn": "02_consistency.ipynb",
          "set_global_seed": "02_consistency.ipynb",
-         "set_consistance": "02_consistency.ipynb",
-         "get_dls": "02_train_utils_fastai2.ipynb"}
+         "set_consistance": "02_consistency.ipynb"}
 
 modules = ["train_utils.py",
            "trick_model.py",
-           "consistency.py",
-           "train_utils_fastai2.py"]
+           "consistency.py"]
 
 doc_url = "https://ayasyrev.github.io/imagenette_experiments/"
 
