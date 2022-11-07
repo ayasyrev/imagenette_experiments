@@ -1,4 +1,4 @@
 [nbdocs]
 docs_path = docs
-notebooks_path = Imagenette_Nbs_1
+notebooks_path = Nbs_docs
 images_path = images
