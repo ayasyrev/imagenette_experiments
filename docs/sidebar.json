@@ -1,8 +1,0 @@
-{
-  "imagenette_experiments": {
-    "Overview": "/",
-    "train_utils": "train_utils.html",
-    "trick_model": "ResnetTrick_model.html",
-    "consistency": "consistency.html"
-  }
-}
